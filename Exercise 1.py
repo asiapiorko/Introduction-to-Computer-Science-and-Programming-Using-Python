@@ -43,11 +43,14 @@ for count in range(10,0,-2):
  """
 # First solution
 
-number = int(input("Insert a number: "))
+number = int(input("Define a number: "))
 end = 0
 for number in range(number+1):
     end += number
 print(end)
 
 # Another solution
-
+total = end
+for next in range(end):
+    total += next
+print(total)  
