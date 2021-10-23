@@ -7,6 +7,7 @@ def oddTuples(aTup):
     index = 0
     words = ()
     
+    # as long as index is smaller then lenght of a tuple then take every second elemnt if the index and add to word list
     while index < len(aTup):
         words += (aTup[index],)
         index += 2
