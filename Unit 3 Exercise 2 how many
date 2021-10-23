@@ -1,0 +1,43 @@
+"""
+Consider the following sequence of expressions:
+
+animals = { 'a': ['aardvark'], 'b': ['baboon'], 'c': ['coati']}
+
+animals['d'] = ['donkey']
+animals['d'].append('dog')
+animals['d'].append('dingo')
+We want to write some simple procedures that work on dictionaries to return information.
+
+First, write a procedure, called how_many, which returns the sum of the number of values associated with a dictionary. For example:
+
+>>> print(how_many(animals))
+6
+"""
+
+def how_many(aDict):
+    '''
+    aDict: A dictionary, where all the values are lists.
+
+    returns: int, how many values are in the dictionary.
+    '''
+    # Your Code Here
+    
+    values = aDict.values()
+    values_in_dict =[]
+    count = 0
+    
+    # create a list of values
+    for words in values:
+        values_in_dict.append(words)
+  
+    # id any value has lenght > 1 then count lenght of the list else add another element
+    for i in values_in_dict:
+        if len(i) > 1:
+            count+= len(i)
+        else:
+            count+=1
+            
+    return count
+
+
+
