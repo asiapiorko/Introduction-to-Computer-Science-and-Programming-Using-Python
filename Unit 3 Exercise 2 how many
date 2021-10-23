@@ -32,10 +32,7 @@ def how_many(aDict):
   
     # id any value has lenght > 1 then count lenght of the list else add another element
     for i in values_in_dict:
-        if len(i) > 1:
-            count+= len(i)
-        else:
-            count+=1
+        count+= len(i)
             
     return count
 
