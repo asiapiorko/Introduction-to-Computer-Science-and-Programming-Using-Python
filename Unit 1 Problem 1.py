@@ -5,10 +5,13 @@ your program should print:
 
 Paste your code into this box """
 
-vowels = ['a', 'e', 'i', 'o', 'u']
-s = 'azcbobobegghakl'
-number = 0
-for letter in s:
-    if letter in vowels:
-        number+=1
-print(number)
+def number_of_vovels(sentense):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    number = 0
+    
+    for letter in s:
+        if letter in vowels:
+            number+=1
+    return number
+
+number_of_vovels('azcbobobegghakl')
