@@ -14,12 +14,15 @@ prints Goodbye!
 # First soultion
 for count in range(2,11,2):
     print(count)
+    
 print("Goodbye!")
 
 # Second soultion
 for count in range(10):
+    
     if count != 0 and count % 2 == 0:
         print(count)
+        
 print("Goodbye!")
 
 """
@@ -35,6 +38,7 @@ prints 2
 
 # First solution
 print("Hello!") 
+
 for count in range(10,0,-2):   
     print(count)
     
@@ -45,14 +49,19 @@ for count in range(10,0,-2):
  """
 # First solution
 
-number = int(input("Define a number: "))
-end = 0
-for number in range(number+1):
-    end += number
-print(end)
+def sum_values():
+    number = int(input("Define a number: "))
+    end = 0
+
+    for number in range(number+1):
+        end += number
+    return end
 
 # Another solution
-total = end
-for next in range(end):
-    total += next
-print(total)  
+def sum_values(end):
+
+    total = end
+
+    for next in range(end):
+        total += next
+    return total
