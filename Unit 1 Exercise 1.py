@@ -17,12 +17,23 @@ for count in range(2,11,2):
     
 print("Goodbye!")
 
+# First solution improved
+
+newlist = print([count for count in range(2,11,2)])
+print("Goodbye!")
+
 # Second soultion
 for count in range(10):
     
     if count != 0 and count % 2 == 0:
         print(count)
         
+print("Goodbye!")
+
+# Second solution - improvement
+
+newlist = [count for count in range(10) if count != 0 and count % 2 == 0 ]
+print(newlist)
 print("Goodbye!")
 
 """
@@ -41,7 +52,14 @@ print("Hello!")
 
 for count in range(10,0,-2):   
     print(count)
-    
+
+# First solution improvement 
+print("Hello!") 
+
+newlist = [count for count in range(10,0,-2)]
+
+print(newlist)
+
  """
  3. Write a for loop that sums the values 1 through end, inclusive. end is a variable that we define for you. So, for example, if we define end to be 6, your code should print out the result:
  21
