@@ -18,8 +18,8 @@ def iterPower(base, exp):
         for i in range(1,exp+1):
             result *=base
         return result
-    else:
-        logging.error("error")
+   
+    logging.error("error")
         
         
 # Second solution
