@@ -21,6 +21,7 @@ Example usage:
 'd'
 If there are no values in the dictionary, biggest should return None.
 """
+# podmienić aDict
 
 def biggest(aDict):
     v = aDict.values()
