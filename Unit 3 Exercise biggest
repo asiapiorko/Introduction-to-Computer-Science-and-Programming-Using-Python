@@ -22,6 +22,7 @@ Example usage:
 If there are no values in the dictionary, biggest should return None.
 """
 # podmienić aDict
+# v,k zmienić na bardziej czytelne info
 
 def biggest(aDict):
     v = aDict.values()
@@ -32,9 +33,11 @@ def biggest(aDict):
     for k, v in aDict.items():
         lenght.append(len(v))
         keys.append(k)
+        
     for elements in lenght:
         maxElements = max(lenght)
         indexMax = lenght.index(maxElements)
+        
     return keys[indexMax]
     
     
@@ -49,8 +52,10 @@ def biggest(aDict):
     '''
     result = None
     biggestValue = 0
+    
     for key in aDict.keys():
         if len(aDict[key]) >= biggestValue:
             result = key
             biggestValue = len(aDict[key])
+            
     return result
